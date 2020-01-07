@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+.navbar {
+  min-height: 38px;
+  background-color: #f55e55;
+}
+.navbar a.brand { font-size: 24px; }
+.navbar a.brand:hover {
+ color: #0ff;
+ background-color: transparent;
+ text-decoration: none;
+}

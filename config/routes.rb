@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :musicians
+  devise_for :users
   get 'help/info'
   resources :notices
   root to: redirect( '/notices')
