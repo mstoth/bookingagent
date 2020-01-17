@@ -7,8 +7,9 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("jquery.ui.widget.js")
-require("z.jquery.fileupload.js")
+require("scripts/main")
+// require("jquery-3.4.1.min")
+// require("jquery-ui-1.12.1/jquery-ui")
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
