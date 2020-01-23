@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @piece.name %>
+</p>
+
+<p>
+  <strong>Composer:</strong>
+  <%= @piece.composer %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @piece.order %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @piece.duration %>
+</p>
+
+<%= link_to 'Edit', edit_piece_path(@piece) %> |
+<%= link_to 'Back', pieces_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :concerts
+  resources :pieces
   resources :musicians
   devise_for :users
   get 'help/info'

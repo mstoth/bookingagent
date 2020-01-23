@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_06_093308) do
+ActiveRecord::Schema.define(version: 2020_01_22_235759) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "concerts", force: :cascade do |t|
+    t.string "title"
+    t.string "location"
+    t.datetime "date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "musicians", force: :cascade do |t|
     t.string "name"
@@ -25,6 +33,15 @@ ActiveRecord::Schema.define(version: 2020_01_06_093308) do
   create_table "notices", force: :cascade do |t|
     t.string "name"
     t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "pieces", force: :cascade do |t|
+    t.string "name"
+    t.string "composer"
+    t.integer "order"
+    t.integer "duration"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
