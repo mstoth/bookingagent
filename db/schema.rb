@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_11_235010) do
+ActiveRecord::Schema.define(version: 2020_02_12_001116) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,9 @@ ActiveRecord::Schema.define(version: 2020_02_11_235010) do
     t.string "avatar_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "zip"
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "notices", force: :cascade do |t|
