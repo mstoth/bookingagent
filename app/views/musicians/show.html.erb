@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <strong>Avatar url:</strong>
-  <%= @musician.avatar_url %>
+  <strong>Avatar:</strong>
+  <%= image_tag(url_for(@musician.avatar.variant(resize_to_limit: [100, 250]))) %>
 </p>
 
 <p>

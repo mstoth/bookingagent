@@ -72,6 +72,6 @@ class MusiciansController < ApplicationController
   end
     # Never trust parameters from the scary internet, only allow the white list through.
     def musician_params
-      params.require(:musician).permit(:name, :avatar_url, :zip)
+      params.require(:musician).permit(:name, :avatar, :zip)
     end
 end

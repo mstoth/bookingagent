@@ -3,12 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 gem 'devise'
-gem 'aws-sdk', '~> 2'
+# gem 'aws-sdk', '~> 2'
+# gem 'aws-sdk-s3', require: false
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-
 gem 'geocoder'
-
+gem 'image_processing', '~> 1.2'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use postgresql as the database for Active Record
