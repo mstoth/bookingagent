@@ -7,7 +7,11 @@
 
 <p>
   <strong>Avatar:</strong>
+  <% if @musician.avatar.attached? %>
   <%= image_tag(url_for(@musician.avatar.variant(resize_to_limit: [100, 250]))) %>
+  <% else %>
+  No Image
+  <% end %>
 </p>
 
 <p>
