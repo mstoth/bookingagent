@@ -57,7 +57,10 @@ class MusiciansController < ApplicationController
   def destroy
     @musician.destroy
     respond_to do |format|
-      format.html { redirect_to musicians_url, notice: 'Musician was successfully destroyed.' }
+      format.html {
+        flash[:notice] = 'Musician was successfully destroyed.'
+        redirect_to musicians_url
+      }
       format.json { head :no_content }
     end
   end
