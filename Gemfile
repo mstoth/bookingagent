@@ -9,7 +9,7 @@ gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'geocoder'
-gem 'image_processing', '~> 1.2'
+gem 'image_processing', '~> 1.12'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use postgresql as the database for Active Record
